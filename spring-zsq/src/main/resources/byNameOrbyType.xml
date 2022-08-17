@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--调试 autowire属性  start-->
+    <!--autowire属性的使用，不需要显示的注入依赖-->
+    <bean class="byNameOrbyType.Person" id="person" autowire="byName">
+    </bean>
+    <bean class="byNameOrbyType.Person2" id="person2" autowire="byType">
+
+    </bean>
+
+    <bean class="byNameOrbyType.Address" id="address">
+        <constructor-arg index="0" name="name" value="zsq"/>
+        <constructor-arg index="1" name="location" value="郑州"/>
+    </bean>
+    <bean class="byNameOrbyType.Address2" id="address2">
+        <constructor-arg index="0" name="name" value="zsq"/>
+        <constructor-arg index="1" name="location" value="郑州"/>
+    </bean>
+    <!--调试 autowire属性  end -->
+
+</beans>

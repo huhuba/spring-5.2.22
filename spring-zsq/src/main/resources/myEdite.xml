@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+<!--    <bean class="myAware.MyAwareProcessor"/>-->
+    <bean id="customer" class="myEdit.Customer">
+        <property name="name" value="zsq"/>
+        <property name="address" value="zsq-11-22"/>
+    </bean>
+    <!--方法1：注册属性编辑器的注册器-->
+    <bean class="org.springframework.beans.factory.config.CustomEditorConfigurer">
+        <property name="propertyEditorRegistrars">
+            <array>
+                <bean class="myEdit.AddressPropertyEditorRegistrar"/>
+            </array>
+        </property>
+    </bean>
+
+<!--
+    &lt;!&ndash; 方法2： 注册属性编辑器&ndash;&gt;
+    <bean class="org.springframework.beans.factory.config.CustomEditorConfigurer">
+        <property name="customEditors">
+            <map>
+                <entry key="myEdit.Address">
+                    <value>myEdit.AddressPropertyEditor</value>
+                </entry>
+            </map>
+        </property>
+    </bean>
+-->
+
+</beans>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+ <!--
+    <bean id="apple" class="methodOverrides.lookup.Apple">
+        <property name="banana" ref="banana"/>
+    </bean>
+
+    <bean id="banana" class="methodOverrides.lookup.Banana" >
+    </bean>
+    <bean class="methodOverrides.lookup.Apple2" id="apple2" scope="prototype"/>
+    <bean id="fruitplate1" class="methodOverrides.lookup.FruitPlate">
+        <lookup-method name="getFruit" bean="apple2"/>
+    </bean>
+    <bean id="fruitplate2" class="methodOverrides.lookup.FruitPlate">
+        <lookup-method name="getFruit" bean="banana"/>
+    </bean>
+    -->
+    <bean class="methodOverrides.replace.OriginalDog" id="originalDog" >
+        <replaced-method name="sayHello" replacer="replaceDog"/>
+    </bean>
+    <bean class="methodOverrides.replace.ReplaceDog" id="replaceDog"/>
+
+
+</beans>

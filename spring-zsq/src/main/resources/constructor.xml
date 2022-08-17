@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+<!--    <bean class="constructor.Person" id="person"/>-->
+    <bean class="constructor.Person" id="person1">
+        <constructor-arg value="11111"  name="id"/>
+        <constructor-arg name="name" value="zsq"/>
+        <property name="age" value="12"/>
+        <property name="sex" value="false"/>
+    </bean>
+    <bean class="constructor.Person" id="person2">
+        <constructor-arg name="id" value="222"/>
+    </bean>
+    <bean  class="constructor.Person" id="person3">
+        <constructor-arg name="name" value="wind"/>
+    </bean>
+</beans>

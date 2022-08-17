@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://www.zsq.com/schema/user"
+        elementFormDefault="qualified">
+    <element name="user">
+        <complexType>
+            <attribute name="id" type="string"/>
+            <attribute name="name" type="string"/>
+            <attribute name="age" type="string"/>
+            <attribute name="income" type="string"/>
+        </complexType>
+    </element>
+    <element name="bean1">
+        <complexType>
+            <attribute  name="id" type="string"/>
+            <attribute  name="name" type="string"/>
+        </complexType>
+    </element>
+</schema>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.springframework.beans.factory.config.BeanPostProcessor</OriginalElement>
+  <nodes>
+    <node x="186.75" y="0.0">org.springframework.beans.factory.config.BeanPostProcessor</node>
+    <node x="0.0" y="80.0">org.springframework.beans.factory.config.SmartInstantiationAwareBeanPostProcessor</node>
+    <node x="107.25" y="160.0">org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor" target="org.springframework.beans.factory.config.SmartInstantiationAwareBeanPostProcessor" relationship="REALIZATION">
+      <point x="0.0" y="-14.0" />
+      <point x="281.25" y="134.0" />
+      <point x="184.0" y="134.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="org.springframework.beans.factory.config.SmartInstantiationAwareBeanPostProcessor" target="org.springframework.beans.factory.config.BeanPostProcessor" relationship="INTERFACE_GENERALIZATION">
+      <point x="0.0" y="-14.0" />
+      <point x="184.0" y="54.0" />
+      <point x="234.0" y="54.0" />
+      <point x="-47.25" y="14.0" />
+    </edge>
+    <edge source="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor" target="org.springframework.beans.factory.config.BeanPostProcessor" relationship="REALIZATION">
+      <point x="0.0" y="-14.0" />
+      <point x="281.25" y="134.0" />
+      <point x="378.5" y="134.0" />
+      <point x="378.5" y="54.0" />
+      <point x="328.5" y="54.0" />
+      <point x="47.25" y="14.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.0" showDependencies="false" x="439.5" y="94.0" />
+  <SelectedNodes>
+    <node>org.springframework.beans.factory.config.BeanPostProcessor</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

@@ -1,0 +1,1 @@
+打开idea安装地址\bin中idea.exe.vmoptions 和idea64.exe.vmoptions 打开文件在最后加上-Dfile.encoding=UTF-8
